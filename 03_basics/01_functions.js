@@ -34,4 +34,18 @@ function addTwoNumbers(num1,num2){
 }
 
 const result =  addTwoNumbers(3,5) // output will be 8
-console.log("Result: ",result);
+// console.log("Result: ",result);  //agr function return kr rha hai toh hi hum usse run krane ke liye kisi variable mai store krenge
+
+
+function loginUserMessage(username){
+    if(username == undefined){
+        console.log("Please enter a username");
+        return
+        
+    }
+    return `${username} just logged in`
+}
+
+// console.log(loginUserMessage("Mansha"))
+
+console.log(loginUserMessage());  // agr koi bhi argument ni diya toh undefined print hoga
