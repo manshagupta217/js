@@ -44,7 +44,31 @@ if (true) {
     const username = "mansha"
     if(username === "mansha"){
         const website = " youtube "
-        console.log(username + website);
-        
+        // console.log(username + website); // this will run
     }
+    // console.log(website);// error (out of scope)
+    
 }
+// console.log(username); // error (out of scope)
+
+// ++++++++++++ interesting concept +++++++++++++
+
+// two way to declare function
+
+console.log(addone(5));  // o/p: 6
+
+
+function addone(num){
+    return num+1 // yaha sirf return hua hai print ni hua hai
+}
+
+addone(5)
+
+console.log(addtwo(6));  // error: Cannot access 'addtwo' before initialization. (kyuki addtwo function declare krke ek variable mai hold bhi kiya)
+
+
+const addtwo =  function(num){
+    return num+2 // yaha sirf return hua hai print ni hua hai
+}
+
+addtwo(5)
